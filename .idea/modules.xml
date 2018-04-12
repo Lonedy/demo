@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/lonedy.iml" filepath="$PROJECT_DIR$/.idea/lonedy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lonedy.iml" filepath="$PROJECT_DIR$/lonedy.iml" />
     </modules>
   </component>
 </project>
