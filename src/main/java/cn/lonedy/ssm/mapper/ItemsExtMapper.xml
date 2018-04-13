@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lonedy.ssm.mapper.ItemsExtMapper" >
+  	<select id="queryItemsList" parameterType="ItemsQueryVO" resultType="items">
+  		SELECT * FROM items 
+  		<where>
+			<if test="items != null">
+				<if test="items.name != null and items.name != ''">
+					AND name LIKE '%${items.name}%'
+				</if>
+			</if>  		
+  		</where>
+  	</select>
+</mapper>
